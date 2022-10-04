@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice System</title>
+    <link rel="stylesheet" href="invoice.css">
+</head>
+<body>
+    <div id="main">
+        <div id="heading">Invoice Generator</div>
+        <div id="options">
+            <form action="">
+                <select name="" id="selection">
+                    <option value="null">Select the Item you like to Buy</option>
+                    <option value="coffee">Coffee Price:Rs 100</option>
+                    <option value="shake">Shake Price: Rs 70</option>
+                    <option value="icecream">Ice Cream Price: Rs 150</option>
+                </select>
+                <div id="quantity">Enter Quantity: <input type="text" id="txtfield"></div>
+            </form>
+        </div>
+        <div id="calculate">
+            <table id="table">
+                <tr>
+                    <td>Item</td>
+                    <td>Quantity</td>
+                    <td>Total</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+    <div id="gtotal">
+        <div id="gtext"><strong>G.Total</strong></div>
+        <div id="gfield"></div>
+    </div>
+    <br>
+    <button type="button" onclick="myFunction()">Generate Invoice</button>
+
+
+    <script src="invoice.js"></script>
+    
+</body>
+</html>
